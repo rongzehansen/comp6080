@@ -1,0 +1,400 @@
+body {
+    margin: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0px;
+}
+
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+hr {
+    color: rgb(55, 55, 55);
+    border-color: rgb(55, 55, 55);
+    background-color: rgb(55, 55, 55);
+    size: 1px;
+}
+
+ul {
+    list-style-image: url(../assets/tick.svg);
+    padding-left: 22px;
+}
+
+li {
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 52px;
+    border-top: 1px solid rgb(55, 55, 55);
+    border-bottom: 1px solid rgb(55, 55, 55);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bg-black {
+    background-color: rgb(20, 20, 20);
+}
+
+.bg-grey {
+    background-color: rgb(37, 37, 37);
+}
+
+.bg-green {
+    background-color: rgb(39, 176, 105);
+}
+
+.txt-white {
+    color: rgb(249, 249, 249);
+}
+
+.txt-grey {
+    color: rgb(205, 205, 205);
+}
+
+.container {
+    width: 453px;
+    height: 1873px;
+}
+
+.ad-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-item {
+    margin: 24px 24px 76px 24px;
+}
+
+.ad-item-heading {
+    width: 76%;
+    height: 66px;
+    line-height: 0.95;
+}
+
+.ad-item-sub {
+    font-size: 12px;
+}
+
+.ad-item-hr {
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.ad-item-content {
+    margin-top: 28px;
+    margin-bottom: 0px;
+    font-size: 10px;
+}
+
+.ad-item-li {
+    font-size: 16px;
+}
+
+.ad-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 405px;
+    height: 117px;
+    margin: 8px 24px 24px 24px;
+    align-items: center;
+}
+
+.ad-icon-img {
+    margin-left: auto;
+    margin-right: 20px;
+    order: 2;
+}
+
+.ad-link-content {
+    width: 50%;
+    margin: 16px;
+    font-size: 10px;
+    order: 1;
+}
+
+.ad-link-btn {
+    width: 135px;
+    height: 30px;
+    margin: 0px 16px 16px 16px;
+    border-style: solid;
+    border-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    order: 3;
+}
+
+.ad-link-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.ad-submit-btn {
+    width: 168px;
+    height: 38px;
+    margin-left: 24px;
+    margin-right: auto;
+    border-style: none;
+    border-color: rgb(39, 176, 105);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.ad-submit-btn:hover {
+    opacity: 0.5;
+}
+
+#special-heading:before {
+    content: "HOW WE COMPARE";
+}
+
+.ad-table-container {
+    width: 404px;
+    margin: 116px 24px 24px 24px;
+}
+
+.table-heading {
+    font-style: italic;
+    font-size: 18px;
+}
+
+thead tr,
+tbody tr {
+    display: grid;
+    grid-template-columns: 74px 140px 115px 75px;
+}
+
+.table-row-header {
+    height: 50px;
+    grid-column: 1 / span 4;
+    text-align: left;
+    border-top: unset;
+    border-bottom: unset;
+}
+
+.table-col-header {
+    border-top: unset;
+}
+
+.table-cell-spl {
+    border-bottom: unset;
+}
+
+.table-row-spl .table-row-header {
+    height: 91px;
+}
+
+.table-row-spl td {
+    height: 84px;
+}
+
+.table-col-hgl {
+    width: 74px;
+    font-size: 18px;
+}
+
+.table-row-empty {
+    height: 50px;
+}
+
+.table-row-spl {
+    height: 175px;
+    border-top: 1px solid rgb(55, 55, 55);
+}
+
+.table-cell-heading {
+    font-size: 18px;
+    margin: unset;
+}
+
+.table-cell-content {
+    font-size: 16px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.table-link-btn {
+    margin-top: 36px;
+    margin-left: 24px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1197px) {
+    p {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    ul {
+        margin-top: 24px;
+        padding-left: 22px;
+    }
+
+    li {
+        padding-left: 12px;
+        margin-bottom: 24px;
+    }
+
+    thead tr,
+    tbody tr {
+        display: table-row;
+    }
+
+    td,
+    th {
+        display: table-cell;
+        height: 65px;
+    }
+
+    .container {
+        width: 1197px;
+        height: 1610px;
+    }
+
+    .ad-info-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ad-item {
+        width: 424px;
+        margin: 52px 40px;
+        padding-right: 64px;
+    }
+
+    .ad-item-heading {
+        width: 100%;
+        height: 232px;
+        font-size: 30px;
+    }
+
+    .ad-item-sub {
+        font-size: 14px;
+    }
+
+    .ad-item-hr {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .ad-item-content {
+        font-size: 14px;
+    }
+
+    .ad-item-li {
+        font-size: 18px;
+    }
+
+    .ad-link-container {
+        width: 1106px;
+        height: 89px;
+        margin: 0px 40px 45px 40px;
+    }
+
+    .ad-icon-img {
+        margin-left: 20px;
+        margin-right: 20px;
+        order: 1;
+    }
+
+    .ad-link-content {
+        margin: 0px;
+        font-size: 14px;
+        order: 2;
+    }
+
+    .ad-link-btn {
+        width: 167px;
+        height: 37px;
+        margin: auto 20px auto auto;
+        font-size: 16px;
+        order: 3;
+    }
+
+    .ad-submit-btn {
+        width: 210px;
+        height: 48px;
+        margin-left: 40px;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    #special-heading:before {
+        content: "COMPARISON";
+    }
+
+    .ad-table-container {
+        display: table;
+        width: 1106px;
+        margin: 154px 40px 40px 40px;
+    }
+
+    .table-heading {
+        font-size: 14px;
+    }
+
+    .table-row-header {
+        display: table-cell;
+        width: 417px;
+        height: auto;
+        text-align: left;
+        vertical-align: middle;
+        border-top: unset;
+        border-bottom: 1px solid rgb(55, 55, 55);
+    }
+
+    .table-row-spl .table-row-header {
+        height: auto;
+    }
+
+    .table-col-header {
+        border-top: unset;
+    }
+
+    .table-cell-spl {
+        border-bottom: unset;
+    }
+
+    .table-col-hgl {
+        width: 106px;
+        font-size: 18px;
+    }
+
+    .table-row-empty {
+        height: 62px;
+    }
+
+    .table-row-spl {
+        height: 115px;
+    }
+
+    .table-cell-heading {
+        font-size: 18px;
+        margin: unset;
+    }
+
+    .table-cell-content {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 0px;
+    }
+
+    .table-link-btn {
+        margin-top: 42px;
+        margin-left: 40px;
+        font-size: 16px;
+    }
+}

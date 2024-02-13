@@ -1,0 +1,110 @@
+html,
+body {
+    height: 100%;
+}
+
+.main-channel {
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signup {
+    max-width: 480px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.bi {
+    vertical-align: -.125em;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.navbar-custom {
+    min-width: 300px;
+    /* Adjust this value to match the width of your sidebar */
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+.hover-buttons {
+    display: none;
+    transform: translateY(-50%);
+}
+
+.list-group-item:hover .hover-buttons {
+    display: flex;
+}
+
+.profile-pic:hover .hover-buttons {
+    display: block;
+}
+
+.profile-pic .profile-img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-pic a {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.profile-pic:hover .profile-img {
+    opacity: 0.5;
+}
+
+.profile-pic:hover a {
+    opacity: 1;
+}
+
+.selected-users {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    max-width: 192px;
+    display: inline-block;
+}
+
+.remove-user {
+    margin-left: 10px;
+    cursor: pointer;
+}
